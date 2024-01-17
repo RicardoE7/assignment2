@@ -51,9 +51,6 @@ String compare(Integer a, Integer b) {
 			Integer newConvertedInput3 = Integer.parseInt(newInput3);
 			a = newConvertedInput3;
 		}
-		
-		else
-		System.out.println(output);
 	}
 	
 	
