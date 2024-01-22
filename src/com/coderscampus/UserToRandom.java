@@ -7,18 +7,20 @@ String compare(Integer a, Integer b) {
 	int i = 1;
 
 	
-	while (a > 100 | a < 1)
-	{
-		System.out.println("Your guess is not between 1 and 100, please try again:");
-		Scanner newScanner1 = new Scanner(System.in);
-		String newInput1 = newScanner1.nextLine();
-		Integer newConvertedInput1 = Integer.parseInt(newInput1);
-		a = newConvertedInput1;
-	}
+	
 	
 	while (i <= 5)
 		
 	{
+		while (a > 100 | a < 1)
+		{
+			System.out.println("Your guess is not between 1 and 100, please try again:");
+			Scanner newScanner1 = new Scanner(System.in);
+			String newInput1 = newScanner1.nextLine();
+			Integer newConvertedInput1 = Integer.parseInt(newInput1);
+			a = newConvertedInput1;
+		}
+		
 		if (a == b)
 		{
 			output = "You win!";
